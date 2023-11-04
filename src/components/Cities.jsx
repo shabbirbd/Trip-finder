@@ -10,8 +10,8 @@ const Cities = () => {
                     <p className='mt-2 md:mt-3 font-normal text-base sm:text-xl text-gray-400'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, minima.</p>
                 </div>
                 <div className='border-2 border-yellow-400 mt-4 flex justify-end sm:ml-2 sm:mt-0 flex-shrink-0'>
-                    <p>{"<"}</p>
-                    <p>{">"}</p>
+                    <p className='p-5 border rounded-full m-2'>{"<"}</p>
+                    <p className='p-5 border rounded-full m-2'>{">"}</p>
                 </div>
             </div>
 
