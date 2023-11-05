@@ -1,24 +1,55 @@
 import React from 'react';
 import { CiLocationOn } from "react-icons/ci";
 import { FcLike } from "react-icons/fc";
-import hotel1 from '../assets/hotel1.jpg';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { places } from '../data/places';
+import HeartBtn from './HeartBtn';
 
 
 const Featured = () => {
+
+
     return (
-        <section className='border-2 border-green-600  lg:w-11/12 mx-auto md:w-full mt-14 p-9 md:p-14 lg:rounded-3xl bg-container1'>
-            <div className='border '>
+        <section className='  lg:w-11/12 mx-auto md:w-full mt-14 p-9 md:p-14 lg:rounded-3xl bg-container1 space-y-10'>
+            <div className='flex flex-col items-center justify-center'>
                     <h1 className='text-3xl md:text-4xl font-semibold'>Featured places to stay</h1>
                     <p className='mt-2 md:mt-4 font-normal text-base sm:text-lg text-neutral-500'>Popular places to stay that Chisfis recommends for you</p>
             </div>
-            <div className='border-2 border-blue-700 grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+            <div className=' grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
                 {
                     places.map((place, i)=>(
                         <div className='border border-neutral-100 rounded-2xl bg-white overflow-hidden will-change-transform hover:shadow-xl transition-shadow' key={i}>
-                            <div>
+                            {/* <div>
                                 <img src={hotel1} alt="" />
-                            </div>
+                            </div> */}
+                            <Swiper
+                                cssMode={true}
+                                navigation={true}
+                                pagination={true}
+                                modules={[Navigation, Pagination]}
+                                className="mySwiper"
+                            >
+                                
+                                {
+                                    place.gallary.map((img, i)=>(
+                                        <div className='border-2 border-green-300'>
+                                            <SwiperSlide key={i}>
+                                                <div className='relative'>
+                                                    <div className='absolute m-3  flex justify-end w-11/12'>
+                                                        <HeartBtn/>
+                                                    </div>
+                                                    <img src={img} alt="hotel" className='h-full object-cover'/>
+                                                </div>
+                                            </SwiperSlide>
+                                        </div>
+                                    ))
+                                }
+                                
+                            </Swiper>
                             <a href='/' className='p-4 block'>
                                 <div className='space-y-4'>
                                     <span className='text-sm text-neutral-500'>entire cabin ' {place.beds} beds</span>
