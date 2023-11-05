@@ -34,8 +34,8 @@ const Slider = () => {
             >
                 <SliderBtns/>
                 {
-                    cities.map(city=>(
-                            <SwiperSlide>
+                    cities.map((city, i)=>(
+                            <SwiperSlide key={i}>
                                 <div className='p-5 w-auto'>
                                     <div className=' overflow-hidden rounded-xl h-96'>
                                         <img src={city.scene} className='hover:opacity-100 lg:md:opacity-80 rounded-xl duration-500 h-full' alt="city" />

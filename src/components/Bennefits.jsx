@@ -28,15 +28,15 @@ const Bennefits = () => {
                 <img src={travel} className='object-cover h-full w-full' alt="tarvel" />
             </div>
 
-            <div className='max-w-2xl flex-shrink-0 mt-10 lg:mt-0 lg:w-2/5 lg:pl-16'>
+            <div className='max-w-2xl flex-shrink-0 mt-10 lg:mt-14 lg:w-2/5 lg:pl-16'>
                 <div>
                     <p className='text-sm text-gray-400 tracking-widest'>BENNEFITS</p>
                     <h2 className='font-semibold text-4xl mt-5'>Happening Cities</h2>
                 </div>
                 <ul className='space-y-10 mt-16'>
                     {
-                        info.map(data=>(
-                            <li className='space-y-4'>
+                        info.map((data, i)=>(
+                            <li className='space-y-4' key={i}>
                                 <p className={`inline-flex px-2.5 py-1 rounded-full font-medium text-xs relative ${data.variant}`}>{data.type}</p>
                                 <h4 className='block text-xl font-semibold'>{data.title}</h4>
                                 <p className='block mt-5 text-neutral-500'>{data.description}</p>
