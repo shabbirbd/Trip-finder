@@ -1,4 +1,5 @@
 import React from 'react';
+import Bennefits from '../components/Bennefits';
 import Cities from '../components/Cities';
 import Hero from '../components/Hero';
 
@@ -8,6 +9,7 @@ const Home = () => {
          <Hero/>   
          {/* <SearchForm/> */}
          <Cities/>
+         <Bennefits/>
         </>
     );
 };
