@@ -3,10 +3,10 @@ import Slider from './Slider';
 
 const Cities = () => {
     return (
-        <section className='border-2 border-red-200'>
-                <div className='border-2 border-sky-300 max-w-2xl m-auto'> 
+        <section className='lg:mt-14 md:mt-10 mt-6 '>
+                <div className='max-w-2xl mx-auto text-center lg:p-10 md:p-7 sm:p-5 '> 
                     <h1 className='text-3xl md:text-4xl font-semibold'>Explore Different Cities</h1>
-                    <p className='mt-2 md:mt-3 font-normal text-base sm:text-xl text-gray-400'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, minima.</p>
+                    <p className='m-3 md:m-4 font-normal text-base sm:text-xl text-gray-400'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, minima.</p>
                 </div>
                 
             {/* carousel item */}

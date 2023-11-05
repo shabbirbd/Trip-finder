@@ -38,7 +38,7 @@ const Slider = () => {
                             <SwiperSlide>
                                 <div className='p-5 w-auto'>
                                     <div className=' overflow-hidden rounded-xl h-96'>
-                                        <img src={city.scene} className='hover:scale-125 rounded-xl duration-500 h-full' alt="city" />
+                                        <img src={city.scene} className='hover:opacity-100 lg:md:opacity-80 rounded-xl duration-500 h-full' alt="city" />
                                     </div>
                                     <div className=''>
                                         <h1 className='text-2xl py-3'>{city.name}</h1>
