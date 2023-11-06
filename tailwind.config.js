@@ -13,6 +13,7 @@ export default {
         elemental: "#4338ca",
         light: "#FAEBED",
         container1: "#F3F4F6",
+        container2: "#FEF7ED"
       }
     },
   },

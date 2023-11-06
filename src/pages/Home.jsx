@@ -4,6 +4,7 @@ import Cities from '../components/Cities';
 import Featured from '../components/Featured';
 import Hero from '../components/Hero';
 import Howitwork from '../components/Howitwork';
+import Suggestions from '../components/Suggestions';
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
          <Bennefits/>
          <Featured/>
          <Howitwork/>
+         <Suggestions/>
         </>
     );
 };

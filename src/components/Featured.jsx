@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { places } from '../data/places';
-import HeartBtn from './HeartBtn';
+import HeartBtn from './buttons/HeartBtn';
 
 
 const Featured = () => {
@@ -36,7 +36,6 @@ const Featured = () => {
                                 
                                 {
                                     place.gallary.map((img, i)=>(
-                                        <div className='border-2 border-green-300'>
                                             <SwiperSlide key={i}>
                                                 <div className='relative'>
                                                     <div className='absolute m-3  flex justify-end w-11/12'>
@@ -45,7 +44,6 @@ const Featured = () => {
                                                     <img src={img} alt="hotel" className='h-full object-cover'/>
                                                 </div>
                                             </SwiperSlide>
-                                        </div>
                                     ))
                                 }
                                 

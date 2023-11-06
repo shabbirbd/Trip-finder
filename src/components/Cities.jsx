@@ -1,4 +1,5 @@
 import React from 'react';
+import { cities } from '../data/cities';
 import Slider from './Slider';
 
 const Cities = () => {
@@ -11,7 +12,7 @@ const Cities = () => {
                 
             {/* carousel item */}
             <div className='mx-auto w-11/12 '>
-                <Slider/>
+                <Slider cities={cities}/>
             </div>
         </section>
     );

@@ -2,14 +2,14 @@ import React from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { cities } from '../data/cities';
-import SliderBtns from './SliderBtns';
+import SliderBtns from './buttons/SliderBtns';
 
 
 
 
 
-const Slider = () => {
+const Slider = ({cities}) => {
+
     return (
         <Swiper
             spaceBetween={10}
@@ -34,7 +34,7 @@ const Slider = () => {
             >
                 <SliderBtns/>
                 {
-                    cities.map((city, i)=>(
+                    cities?.map((city, i)=>(
                             <SwiperSlide key={i}>
                                 <div className='p-5 w-auto'>
                                     <div className=' overflow-hidden rounded-xl h-96'>
