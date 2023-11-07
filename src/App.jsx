@@ -8,10 +8,13 @@ function App() {
 
   return (
     <>
-      <Navbar/>
-      <Routes>
-        <Route index path="/" element={<Home/>} />
-      </Routes>
+      
+        <Navbar/>
+        <div className='w-11/12 mx-auto lg:px-[100px]'>
+        <Routes>
+          <Route index path="/" element={<Home/>} />
+        </Routes>
+      </div>
     </>
   )
 }
