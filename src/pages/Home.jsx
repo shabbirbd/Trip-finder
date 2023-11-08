@@ -1,4 +1,5 @@
 import React from 'react';
+import Author from '../components/Author';
 import Bennefits from '../components/Bennefits';
 import Cities from '../components/Cities';
 import Featured from '../components/Featured';
@@ -18,6 +19,7 @@ const Home = () => {
          <Howitwork/>
          <Suggestions/>
          <Newsletter/>
+         <Author/>
         </>
     );
 };
