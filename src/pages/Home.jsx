@@ -2,6 +2,7 @@ import React from 'react';
 import Author from '../components/Author';
 import Bennefits from '../components/Bennefits';
 import Cities from '../components/Cities';
+import Explore from '../components/Explore';
 import Featured from '../components/Featured';
 import Hero from '../components/Hero';
 import Howitwork from '../components/Howitwork';
@@ -20,6 +21,7 @@ const Home = () => {
          <Suggestions/>
          <Newsletter/>
          <Author/>
+         <Explore/>
         </>
     );
 };

@@ -14,7 +14,7 @@ const Featured = () => {
 
 
     return (
-        <section className='  lg:w-11/12 mx-auto md:w-full mt-14 p-9 md:p-14 lg:rounded-3xl bg-container1 space-y-10'>
+        <section className='mx-auto w-full m:w-screen mt-14 p-9 md:p-14 rounded-3xl bg-container1 space-y-10'>
             <div className='flex flex-col items-center justify-center'>
                     <h1 className='text-3xl md:text-4xl font-semibold'>Featured places to stay</h1>
                     <p className='mt-2 md:mt-4 font-normal text-base sm:text-lg text-neutral-500'>Popular places to stay that Chisfis recommends for you</p>
