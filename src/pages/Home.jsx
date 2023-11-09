@@ -8,6 +8,7 @@ import Hero from '../components/Hero';
 import Howitwork from '../components/Howitwork';
 import Newsletter from '../components/Newsletter';
 import Suggestions from '../components/Suggestions';
+import WhyChoseUs from '../components/WhyChoseUs';
 
 const Home = () => {
     return (
@@ -22,6 +23,7 @@ const Home = () => {
          <Newsletter/>
          <Author/>
          <Explore/>
+         <WhyChoseUs/>
         </>
     );
 };

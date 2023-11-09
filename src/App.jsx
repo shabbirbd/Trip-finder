@@ -10,7 +10,7 @@ function App() {
     <>
       
         <Navbar/>
-        <div className='w-11/12 mx-auto lg:px-[100px]'>
+        <div className='w-11/12 mx-auto lg:px-[100px] relative'>
         <Routes>
           <Route index path="/" element={<Home/>} />
         </Routes>
