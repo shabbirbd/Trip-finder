@@ -9,7 +9,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false)
     const [dark, setDark] = useState(false);;
     return (
-        <nav className='border-b-[1px] flex justify-between py-5 align-center lg:px-48 px-8'>
+        <nav className='border-b-[1px] flex justify-between py-5 align-center lg:px-48 px-8 sticky top-0 bg-white z-50'>
             <img src={logo} alt="logo" className='h-12 w-auto cursor-pointer' />
             <ul className='md:flex items-center hidden gap-10 '>
                 <Navlinks/>
