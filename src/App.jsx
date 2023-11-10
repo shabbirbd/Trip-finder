@@ -16,8 +16,8 @@ function App() {
         <Routes>
           <Route index path="/" element={<Home/>} />
         </Routes>
+        </div>
         <Footer/>
-      </div>
     </>
   )
 }
