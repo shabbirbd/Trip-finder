@@ -8,6 +8,7 @@ import Hero from '../components/Hero';
 import Howitwork from '../components/Howitwork';
 import Newsletter from '../components/Newsletter';
 import Suggestions from '../components/Suggestions';
+import Videos from '../components/Videos';
 import WhyChoseUs from '../components/WhyChoseUs';
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
          <Author/>
          <Explore/>
          <WhyChoseUs/>
+         <Videos/>
         </>
     );
 };
