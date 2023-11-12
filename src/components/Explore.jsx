@@ -4,7 +4,7 @@ import { explore } from '../data/explore';
 const Explore = () => {
     
     return (
-        <div className='space-y-10 mt-14 '>
+        <div className='space-y-10 my-14 '>
             <div className='w-full max-w-2xl mx-auto text-center'>
                 <h2 className="font-semibold text-3xl md:text-4xl">Explore nearby</h2>
                 <span className="mt-2 md:mt-3 font-normal text-base block sm:text-xl text-neutral-500">Discover great access near you live</span>

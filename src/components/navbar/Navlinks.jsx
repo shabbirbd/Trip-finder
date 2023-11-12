@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navlinks = () => {
-    const links = [{name: "Home", link:"/"},{name: "Cities", link: "/cities"},{name: "Checkout", link: "/checkout"}, {name: "About", link: "/about"}]
+    const links = [{name: "Home", link:"/"},{name: "Listings", link: "/listings"},{name: "Checkout", link: "/checkout"}, {name: "About", link: "/about"}]
     return (
         <>
         {
