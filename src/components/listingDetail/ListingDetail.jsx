@@ -3,7 +3,9 @@ import { BsPersonPlusFill } from "react-icons/bs";
 import { FcLike } from 'react-icons/fc';
 import { SlCalender } from "react-icons/sl";
 import Amenities from './Amenities';
+import HostInfo from './HostInfo';
 import HouseCard from './HouseCard';
+import RoomRates from './RoomRates';
 import StayInfo from './StayInfo';
 
 
@@ -14,6 +16,8 @@ const ListingDetail = () => {
                 <HouseCard/>
                 <StayInfo/>
                 <Amenities/>
+                <RoomRates/>
+                <HostInfo/>
             </div>
 
 

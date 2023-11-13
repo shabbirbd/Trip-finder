@@ -26,7 +26,7 @@ const Amenities = () => {
             <div className="w-14 border-b border-neutral-200"></div>
 
             <div>
-                <button className="relative h-auto inline-flex items-center justify-center rounded-full transition-colors text-sm sm:text-base px-4 py-3 sm:px-6  ttnc-ButtonSecondary font-medium border bg-white border-neutral-200 text-neutral-700  hover:bg-neutral-100   focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-600 ">View more 20 amenities</button>
+                <button className="relative h-auto inline-flex items-center justify-center rounded-full transition-colors text-sm sm:text-base px-4 py-3 sm:px-6 font-medium border bg-white border-neutral-200 text-neutral-700 hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-600 ">View more 20 amenities</button>
             </div>
         </div>
     );
