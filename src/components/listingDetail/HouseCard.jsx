@@ -13,7 +13,7 @@ const HouseCard = () => {
     const features = [{title: "guests", quantity: 6 , icon: <GoPerson/>}, {title: "beds", quantity: 6 , icon: <IoBed/>}, {title: "baths", quantity: 3 , icon: <PiBathtub/>}, {title: "bedrooms", quantity: 2 , icon: <RiDoorOpenLine/>}]
 
     return (
-        <div className='w-full rounded-2xl border border-neutral-200 space-y-6 p-6'>
+        <div className='listingDetailCard'>
             <div className='flex justify-between items-center '>
                 <span className='inline-flex px-2.5 py-1 rounded-full font-medium text-xs relative text-blue-800 bg-blue-100 '>Wooden house</span>
                 <div className='flex text-neutral-700 text-sm -mx-3 -m-1.5'>

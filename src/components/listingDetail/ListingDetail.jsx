@@ -2,7 +2,9 @@ import React from 'react';
 import { BsPersonPlusFill } from "react-icons/bs";
 import { FcLike } from 'react-icons/fc';
 import { SlCalender } from "react-icons/sl";
+import Amenities from './Amenities';
 import HouseCard from './HouseCard';
+import StayInfo from './StayInfo';
 
 
 const ListingDetail = () => {
@@ -10,6 +12,8 @@ const ListingDetail = () => {
         <main className='relative z-10 mt-11 flex flex-col lg:flex-row border-2 border-red-400'>
             <div className='w-full lg:w-3/5 xl:2/3 space-y-8 lg:spaace-y-10 lg:pr-10 border-2 border-green-400'>
                 <HouseCard/>
+                <StayInfo/>
+                <Amenities/>
             </div>
 
 
