@@ -56,13 +56,13 @@ const HouseCard = () => {
             </div>
 
 
-            <div className="w-full border-b border-neutral-100"></div>
+            <div className="w-14 border-b border-neutral-200"></div>
 
 
             <div className='flex items-center justify-between xl:justify-start space-x-8 xl:space-x-12 text-sm text-neutral-700 '>
                 {
                     features?.map((feature, i)=>(
-                        <div className='flex items-center space-x-2 text-2xl'>
+                        <div className='flex items-center space-x-2 text-2xl' key={i}>
                             {feature.icon}
                             <span className='text-sm font-normal'>
                                 {feature.quantity}
@@ -72,6 +72,7 @@ const HouseCard = () => {
                     ))
                 }
             </div>
+
         </div>
     );
 };
