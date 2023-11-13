@@ -5,6 +5,7 @@ import { SlCalender } from "react-icons/sl";
 import Amenities from './Amenities';
 import HostInfo from './HostInfo';
 import HouseCard from './HouseCard';
+import Reviews from './Reviews';
 import RoomRates from './RoomRates';
 import StayInfo from './StayInfo';
 
@@ -18,6 +19,7 @@ const ListingDetail = () => {
                 <Amenities/>
                 <RoomRates/>
                 <HostInfo/>
+                <Reviews/>
             </div>
 
 

@@ -32,10 +32,10 @@ const RoomRates = () => {
 
             <div className="w-14 border-b border-neutral-200"></div>
 
-            <div className='text-sm sm:text-base text-neutral-600 -mb-4'>
+            <div className='text-sm sm:text-base text-neutral-600 -mb-4 space-y-2'>
                 {
                     pricing?.map((item, i)=>(
-                        <div className='p-4 flex items-center justify-between space-x-4 bg-neutral-100' key={i}>
+                        <div className='p-4 flex items-center justify-between space-x-4 bg-neutral-100 rounded-xl border border-neutral-200' key={i}>
                             <span>{item.title}</span>
                             <span>{item.price}</span>
                         </div>
