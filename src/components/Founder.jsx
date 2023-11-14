@@ -31,7 +31,7 @@ const Founder = () => {
     ]
 
     return (
-        <div className='relative mt-14'>
+        <div className='relative mt-16'>
             <div className='max-w-2xl mb-12 lg:mb-16'>
                 <h2 className='text-3xl md:text-4xl font-semibold'>⛱️ Founder</h2>
                 <span className='mt-2 md:mt-3 font-normal block text-base sm:text-xl text-neutral-500'>We're impartial and independent, and every day we create distinctive, world-class programmes and content</span>
