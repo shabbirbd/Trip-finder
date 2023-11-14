@@ -26,7 +26,8 @@ const Videos = () => {
     ];
 
 
-    const handleVideo = (link)=>{
+    const handleVideo = (link,e)=>{
+        e.preventDefault();
         setCurrentLink(link);
         setPlay(true);
     }
@@ -46,8 +47,8 @@ const Videos = () => {
 
                 <div className='flex-grow relative pb-2 sm:pb-4 lg:pb-0 lg:pr-5 xl:pr-6'>
                     <div className='group aspect-w-16 aspect-h-16 sm:aspect-h-9 rounded-3xl sm:rounded-[50px] will-change-transform overflow-hidden border-4 border-white'>
-                        <iframe src={currentLink} allow="accelerometer; autoplay; clipbord-write; enctypted-media;  gyroscope picture-in-picture" allowFullScreen className={`${play ? "block" : "hidden"}`}></iframe>
-                        <div className={`cursor-pointer absolute inset-0 ${play ? "hidden" : "flex"} items-center  justify-center z-20`} onClick={()=>setPlay(true)}>
+                        <iframe src={currentLink} allow="accelerometer; clipbord-write; enctypted-media;  gyroscope picture-in-picture" allowFullScreen className={`${play ? "block" : "hidden"}`}></iframe>
+                        <div className={`cursor-pointer absolute inset-0 ${play ? "hidden" : "flex"} items-center  justify-center z-20`} onClick={(e)=>{e.preventDefault(),setPlay(true)}}>
                             <div className='bg-white bg-opacity-30 backdrop-filter backdrop-blur rounded-full w-20 h-20 lg:w-52 lg:h-52 p-3 lg:p-12'>
                                 <div className='w-full h-full bg-white rounded-full text-elemental relative'>
                                     <span className='absolute inset-0 flex items-center justify-center'>
@@ -65,7 +66,7 @@ const Videos = () => {
                 <div className='flex-shrink-0 grid gap-2 grid-cols-4 sm:gap-6 lg:grid-cols-1 lg:w-36 xl:w-40'>
                         {
                             videosData?.map((data,i)=>(
-                                <div className='group aspect-h-16 aspect-w-16 rounded-2xl cursor-pointer overflow-hidden sm:aspect-h-12 sm:rounded-3xl lg:aspech-h-9 will-change-transform' key={i} onClick={()=> handleVideo(data.link)}>
+                                <div className='group aspect-h-16 aspect-w-16 rounded-2xl cursor-pointer overflow-hidden sm:aspect-h-12 sm:rounded-3xl lg:aspech-h-9 will-change-transform' key={i} onClick={(e)=> handleVideo(data.link, e)}>
                                     <div className='absolute inset-0 flex items-center justify-center z-10'>
                                         <div className='bg-white rounded-full text-elemental relative shadow-inner w-8 h-8 md:w-10 md:h-10'>
                                             <span className='absolute inset-0 flex items-center justify-center text-primary-500'>

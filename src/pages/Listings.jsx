@@ -1,5 +1,7 @@
 import React from 'react';
+import Explore from '../components/Explore';
 import ListingHeader from '../components/ListingHeader';
+import Newsletter from '../components/Newsletter';
 import ListingDetail from '../components/listingDetail/ListingDetail';
 
 const Listings = () => {
@@ -7,6 +9,8 @@ const Listings = () => {
         <>
             <ListingHeader/>
             <ListingDetail/>
+            <Explore/>
+            <Newsletter/>
         </>
     );
 };
