@@ -53,7 +53,7 @@ const HostInfo = () => {
             <div className='block text-neutral-500 space-y-2.5'>
                 {
                     hostInfo?.map((item, i)=>(
-                        <div className="flex items-center space-x-3 text-2xl">
+                        <div className="flex items-center space-x-3 text-2xl" key={i}>
                             {item.icon}
                             <span className='text-sm font-normal'>{item.info}</span>
                         </div>
@@ -61,10 +61,10 @@ const HostInfo = () => {
                 }
             </div>
 
-            <div class="w-14 border-b border-neutral-200"></div>
+            <div className="w-14 border-b border-neutral-200"></div>
 
             <div>
-                <a class="relative h-auto inline-flex items-center justify-center rounded-full transition-colors text-sm sm:text-base font-medium px-4 py-3 sm:px-6  border bg-white border-neutral-200 text-neutral-700  hover:bg-neutral-100   focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-6000" href="/">See host profile</a>
+                <a className="relative h-auto inline-flex items-center justify-center rounded-full transition-colors text-sm sm:text-base font-medium px-4 py-3 sm:px-6  border bg-white border-neutral-200 text-neutral-700  hover:bg-neutral-100   focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-6000" href="/">See host profile</a>
             </div>
         </div>
     );
