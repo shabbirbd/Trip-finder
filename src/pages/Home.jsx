@@ -10,12 +10,13 @@ import Newsletter from '../components/Newsletter';
 import Suggestions from '../components/Suggestions';
 import Videos from '../components/Videos';
 import WhyChoseUs from '../components/WhyChoseUs';
+import Booking from '../components/bookingForm/Booking';
 
 const Home = () => {
     return (
         <>
          <Hero/>   
-         {/* <SearchForm/> */}
+         <Booking/>
          <Cities/>
          <Bennefits/>
          <Featured/>
