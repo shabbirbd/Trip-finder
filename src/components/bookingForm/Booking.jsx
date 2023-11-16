@@ -3,6 +3,7 @@ import { CiCalendarDate } from 'react-icons/ci';
 import { IoLocationOutline } from 'react-icons/io5';
 import { MdOutlinePersonAddAlt } from 'react-icons/md';
 import { BookingContext } from '../../App';
+import Calander from './Calander';
 import Counter from './Counter';
 
 const Booking = () => {
@@ -29,7 +30,7 @@ const Booking = () => {
 
                 <div className="self-center border-r border-slate-200 h-8"></div>
 
-                <div className='z-10 relative flex flex-1 p-5'>
+                <div className='z-10 relative flex flex-1 p-5 group'>
                     <button className='flex-1 relative z-10 flex items-center space-x-3 focus:outline-none' type='button'>
                         <div className='text-neutral-300 text-2xl'>
                             <CiCalendarDate />
@@ -39,6 +40,13 @@ const Booking = () => {
                             <span className="block mt-1 text-sm text-neutral-400 leading-none font-light">Check in - Check out</span>
                         </div>
                     </button>
+
+
+                    {/* headless ui */}
+                    <div className='absolute top-full w-full h-5'></div>
+                    <div className='border-2 border-green-400 group-hover:block hidden absolute left-1/2 z-10 mt-3 top-full w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-3xl translate-y-0'>
+                        <Calander/>
+                    </div>
                 </div>
 
                 <div className="self-center border-r border-slate-200 h-8"></div>
