@@ -13,22 +13,15 @@ function App() {
 
   const [bookingData, setBookingData] = useState({
     guestCount: 0,
-    guestCountOpen: false,
   })
 
-  // const handleClick = (e)=>{
-  //   if(e.target.id !== "guestCount"){
-  //     setBookingData({guestCountOpen: false})
-  //     console.log(e.target.id)
-  //   }
-  //   console.log("outsite:" , e.target.id)
-  // }
+  
 
   return (
     <>
       <BookingContext.Provider value={[bookingData, setBookingData]}>
         <Navbar/>
-        <div className='w-11/12 mx-auto lg:px-[100px] relative' >
+        <div className='w-11/12 mx-auto lg:px-[100px] relative'>
         <Routes>
           <Route index path="/" element={<Home/>} />
           <Route path="/listings" element={<Listings/>} />
