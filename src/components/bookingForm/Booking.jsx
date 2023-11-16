@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { CiCalendarDate } from 'react-icons/ci';
 import { IoLocationOutline } from 'react-icons/io5';
 import { MdOutlinePersonAddAlt } from 'react-icons/md';
@@ -7,7 +7,6 @@ import Counter from './Counter';
 
 const Booking = () => {
     const guestsCriteria = [{title: "Adults", age: "Ages 13 or above"},{title: "Children", age: "Ages 2-12"}, {title: "Infants", age: "Ages 0-2"}];
-    const [guestCountOpen, setGuestCountOpen] = useState(false)
     const [bookingData, setBookingData] = useContext(BookingContext)
     
 
@@ -45,7 +44,7 @@ const Booking = () => {
                 <div className="self-center border-r border-slate-200 h-8"></div>
                 
 
-                <div className='flex relative flex-1 p-5 group'  onFocus={()=>setGuestCountOpen(true)} >
+                <div className='flex relative flex-1 p-5' id='guestCount'  onFocus={()=>setBookingData({...bookingData, guestCountOpen: true})} >
                     <div className='flex-1 z-10 flex items-center focus:outline-none'>
                         <button className='relative z-10 flex-1 flex items-center text-left space-x-3 focus:outline-none' type='button'> 
                             <div className='text-neutral-300 text-2xl'>
@@ -65,7 +64,7 @@ const Booking = () => {
 
 
                     {/* headless ui */}
-                    <div className={`absolute ${guestCountOpen ? "block" : "hidden"} right-0 z-10 w-full sm:min-w-[340px] lg:w-sm bg-white top-full mt-3 py-5 sm:py-6 px-4 sm:px-8 rounded-3xl opacity-100 shadow-xl border-2 border-green-300 space-y-3`} onBlur={()=>setGuestCountOpen(false)}>
+                    <div className={`absolute ${bookingData?.guestCountOpen ? "block" : "hidden"} right-0 z-10 w-full sm:min-w-[340px] lg:w-sm bg-white top-full mt-3 py-5 sm:py-6 px-4 sm:px-8 rounded-3xl opacity-100 shadow-xl border-2 border-green-300 space-y-3`} >
                         {
                             guestsCriteria?.map((item, i)=>(
                                 <div className='flex items-center justify-between space-x-5 w-full border-2 border-red-300' key={i} >
