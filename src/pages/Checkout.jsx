@@ -1,12 +1,13 @@
 import React from 'react';
+import hotel1 from '../assets/hotel1.jpg';
 import mastercard from '../assets/mastercard.png';
 import visa from '../assets/visa.png';
 import PaymentInfo from '../components/PaymentInfo';
 
 const Checkout = () => {
     return (
-        <div className='border-2 border-green-300 container mt-11 mb-24 lg:mb-32 flex flex-col-reverse lg:flex-row'>
-            <div className='w-full lg:w-3/5 xl:w-2/3 lg:pr-10 border-2 border-red-400'>
+        <div className=' container mt-11 mb-24 lg:mb-32 flex flex-col-reverse lg:flex-row'>
+            <div className='w-full lg:w-3/5 xl:w-2/3 lg:pr-10'>
                 <div className='w-full flex flex-col sm:rounded-2xl sm:border sm:border-neutral-200 space-y-8 px-0 sm:p-6 xl:p-8'>
                     <h2 className="text-3xl lg:text-4xl font-semibold">Confirm and payment</h2>
 
@@ -65,8 +66,50 @@ const Checkout = () => {
             
 
 
-            <div className='hidden lg:block flex-grow'>
+            <div className='hidden lg:block flex-grow relative'>
+                <div className='w-full flex flex-col sm:rounded-2xl border border-neutral-200 space-y-6 sm:space-y-8 sm:p-6 xl:p-8 sticky top-28'>
+                    <div className='flex flex-col sm:flex-row sm:items-center'>
+                        <div className='flex-shrink-0 w-full sm:w-40 '>
+                            <div className=" aspect-w-4 aspect-h-3 sm:aspect-h-4 rounded-2xl overflow-hidden">
+                                <img alt="room" className="absolute inset-0 object-cover"  src={hotel1} />
+                            </div>
+                        </div>
 
+                        <div className="py-5 sm:px-5 space-y-3">
+                            <div>
+                                <span className="text-sm text-neutral-500line-clamp-1">Hotel room in Tokyo, Jappan</span>
+                                <span className="text-base font-medium mt-1 block">The Lounge & Bar</span>
+                            </div>
+                            <span className="block  text-sm text-neutral-500">2 beds · 2 baths</span>
+                            <div className="w-10 border-b border-neutral-200 "></div>
+                            <div className="nc-StartRating flex items-center space-x-1 text-sm  " >
+                                <div className="pb-[2px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className="w-[18px] h-[18px] text-orange-500"><path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd"></path></svg>
+                                </div>
+                                <span className="font-medium ">4.5</span>
+                                <span className="text-neutral-500 ">(112)</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className="flex flex-col space-y-4">
+                        <h3 className="text-2xl font-semibold">Price detail</h3>
+                        <div className="flex justify-between text-neutral-600 ">
+                            <span>$19 x 3 day</span>
+                            <span>$57</span>
+                        </div>
+                        <div className="flex justify-between text-neutral-600 ">
+                            <span>Service charge</span>
+                            <span>$0</span>
+                        </div>
+                        <div className="border-b border-neutral-200"></div>
+                        <div className="flex justify-between font-semibold">
+                            <span>Total</span>
+                            <span>$57</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
