@@ -1,15 +1,11 @@
-import React, { useState } from 'react';
-import DatePicker from "react-datepicker";
+import { useState } from 'react';
 
 const Calander = () => {
     const [startDate, setStartDate] = useState(new Date());
     return (
-            <DatePicker
-            selected={startDate}
-            onChange={(date) => setStartDate(date)}
-            monthsShown={2}
-            inline
-            />   
+            <>
+                Date Picker
+            </>
     );
 };
 
