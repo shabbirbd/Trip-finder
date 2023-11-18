@@ -11,6 +11,7 @@ import Listings from './pages/Listings';
 export const BookingContext = createContext();
 
 function App() {
+  const [dark, setDark] = useState(false)
 
   const [bookingData, setBookingData] = useState({
     guestCount: 0,
@@ -21,8 +22,8 @@ function App() {
   return (
     <>
       <BookingContext.Provider value={[bookingData, setBookingData]}>
-        <Navbar/>
-        <div className='w-11/12 mx-auto lg:px-[100px] relative'>
+        <Navbar />
+        <div className='w-11/12 mx-auto lg:px-[100px] relative dark:bg-black'>
         <Routes>
           <Route index path="/" element={<Home/>} />
           <Route path="/listings" element={<Listings/>} />
