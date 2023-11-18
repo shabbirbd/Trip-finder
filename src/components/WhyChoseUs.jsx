@@ -6,7 +6,7 @@ import DarkBtn from './buttons/DarkBtn';
 
 const WhyChoseUs = () => {
     return (
-        <div className='bg-container1 flex flex-col lg:flex-row items-center p-10  my-14 rounded-2xl'>
+        <div className='bg-container1 flex flex-col lg:flex-row items-center p-10  my-14 rounded-2xl dark:bg-black dark:bg-opacity-20'>
             <div className=' flex-shrink-0 mb-16 lg:mb-0 lg:w-2/5'>
                 <a href="/" className='w-20 inline-block'>
                     <img src={logo} alt="logo" className='w-full object-cover' />

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { FaBars, FaMoon, FaMountainSun, FaSun, FaX } from "react-icons/fa6";
+import { FaBars, FaMoon, FaMountainSun, FaX } from "react-icons/fa6";
+import { MdOutlineWbSunny } from 'react-icons/md';
 import logo from '../../assets/logo.png';
 import DarkBtn from '../buttons/DarkBtn';
 import Navlinks from './Navlinks';
@@ -19,9 +20,9 @@ const Navbar = () => {
     }, [dark])
 
     return (
-        <nav className='border-b-[1px] flex justify-between py-5 align-center lg:px-48 px-8 sticky top-0 bg-white z-50'>
+        <nav className='border-b-[1px] border-neutral-200 dark:border-neutral-600 flex justify-between py-5 align-center lg:px-48 px-8 sticky top-0 bg-white dark:bg-darkBg z-50'>
             <img src={logo} alt="logo" className='h-12 w-auto cursor-pointer' />
-            <ul className='md:flex items-center hidden gap-10 '>
+            <ul className='md:flex items-center hidden gap-10 dark:text-neutral-100 '>
                 <Navlinks/>
             </ul>
             {/* mobile menu */}
@@ -33,7 +34,8 @@ const Navbar = () => {
             <div className='md:flex items-center gap-3 hidden'>
                 <div className='text-2xl dark:text-white' onClick={()=>setDark(!dark)}>
                     {
-                       dark ? <FaMoon/> : <FaSun/>  
+                       dark ? <FaMoon/> :  <MdOutlineWbSunny />
+
                     }
                 </div>
                 <DarkBtn>Sign Up</DarkBtn>

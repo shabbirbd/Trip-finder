@@ -12,7 +12,7 @@ const Explore = () => {
             <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8 sm:gap-6 lg:gap-8 p-5'>
                 {
                     explore?.map((data, i)=>(
-                        <a key={i} className='relative flex items-center p-3 sm:p-6 border border-neutral-200 rounded-2xl hover:shadow-2xl transition-shadow'>
+                        <a key={i} className='relative flex items-center p-3 sm:p-6 border border-neutral-200 rounded-2xl hover:shadow-2xl transition-shadow dark:border-neutral-600'>
                             <span className='inline-flex px-2.5 py-1 rounded-full font-medium text-xs absolute top-2 right-2 text-gray-800 bg-gray-100 '>1882</span>
                             <div className='flex-shrink-0 rounded-full w-24 h-24 overflow-hidden'>
                                 <img src={data.scene} alt="city" className='object-cover w-full h-full'/>

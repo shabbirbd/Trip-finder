@@ -4,7 +4,7 @@ import Slider from './Slider';
 
 const Suggestions = () => {
     return (
-        <section className='bg-container2 w-full mx-auto rounded-[40px] mt-20 py-14'>
+        <section className='bg-container2 w-full mx-auto rounded-[40px] mt-20 py-14 dark:bg-black dark:bg-opacity-20'>
             <div className='w-11/12 mx-auto'>
                 <div className='text-center w-full max-w-2xl  mx-auto'>
                     <h2 className='text-3xl md:text-4xl font-semibold'>Suggestions for discovery</h2>

@@ -16,7 +16,7 @@ const HouseCard = () => {
         <div className='listingDetailCard'>
             <div className='flex justify-between items-center '>
                 <span className='inline-flex px-2.5 py-1 rounded-full font-medium text-xs relative text-blue-800 bg-blue-100 '>Wooden house</span>
-                <div className='flex text-neutral-700 text-sm -mx-3 -m-1.5'>
+                <div className='flex text-neutral-700 dark:text-neutral-500 text-sm -mx-3 -m-1.5'>
                     <span className='py-1.5 px-3 flex rounded-lg hover:bg-neutral-100 cursor-pointer'>
                         <BiUpload className='h-5 w-5'/>
                         <span className='hidden sm:block ml-2.5'>Share</span>
@@ -34,9 +34,9 @@ const HouseCard = () => {
                 <div className='flex items-center space-x-1 text-sm'>
                     <BsStarFill className='text-yellow-400 w-[18px] h-[18px]'/>
                     <span className='font-medium'>4.5</span>
-                    <span className='text-neutral-500'>{`(119)`}</span>
+                    <span className='text-neutral-500 dark:text-neutral-400'>{`(119)`}</span>
                 </div>
-                <span className='text-neutral-500 flex items-center'>
+                <span className='text-neutral-500 dark:text-neutral-400 flex items-center'>
                     <MdLocationPin/>
                     <span className='ml-1'>Tokyo, Japan</span>
                 </span>
@@ -49,20 +49,20 @@ const HouseCard = () => {
                         <BsPatchCheckFill/>
                     </span>
                 </div>
-                <span className='ml-2.5 text-neutral-500'>
+                <span className='ml-2.5 text-neutral-500 dark:text-neutral-400'>
                     Hosted by
-                    <span className='text-neutral-900 font-medium'> Kavin Francis</span>
+                    <span className='text-neutral-900 dark:text-neutral-200 font-medium'> Kavin Francis</span>
                 </span>
             </div>
 
 
-            <div className="w-14 border-b border-neutral-200"></div>
+            <div className="w-full border-b border-neutral-200 dark:border-neutral-600"></div>
 
 
             <div className='flex items-center justify-between xl:justify-start space-x-8 xl:space-x-12 text-sm text-neutral-700 '>
                 {
                     features?.map((feature, i)=>(
-                        <div className='flex items-center space-x-2 text-2xl' key={i}>
+                        <div className='flex items-center space-x-2 text-2xl text-neutral-900 dark:text-neutral-200' key={i}>
                             {feature.icon}
                             <span className='text-sm font-normal'>
                                 {feature.quantity}

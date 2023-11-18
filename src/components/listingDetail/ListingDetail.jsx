@@ -29,7 +29,7 @@ const ListingDetail = () => {
 
             <div className='hidden lg:block flex-grow mt-14 lg:mt-0'>
                 <div className='sticky top-28'>
-                    <div className='shadow-xl flex flex-col justify-center border border-neutral-300 p-10 space-y-9 rounded-2xl'>
+                    <div className='shadow-xl flex flex-col justify-center border border-neutral-200 dark:border-neutral-600 p-10 space-y-9 rounded-2xl'>
 
                         <div className='flex justify-between'>
                             <span className='text-3xl font-semibold'>$119 <span className='ml-1 text-base font-normal text-neutral-500'>/night</span></span>
@@ -40,7 +40,7 @@ const ListingDetail = () => {
                             </div>
                         </div>
 
-                        <form className='flex flex-col border border-neutral-200 rounded-3xl'>
+                        <form className='flex flex-col border border-neutral-200 dark:border-neutral-600 rounded-3xl text-neutral-600 dark:text-neutral-200'>
                             <div className='z-10 relative flex flex-1 '>
                                 <button className='flex-1 flex relative p-3 items-center space-x-3 focus:outline-none'>
                                     <div className='text-neutral-300 '>
@@ -53,12 +53,12 @@ const ListingDetail = () => {
                                 </button>
                             </div>
 
-                            <div className='w-full border-b border-neutral-200'></div>
+                            <div className='w-full border-b border-neutral-200 dark:border-neutral-600'></div>
 
                             <div className='flex relaive flex-1'>
                                 <div className='flex-1 flex items-center focus:outline-none rounded-b-3xl'>
                                     <button className='flex-1 flex relative p-3 items-center space-x-3 focus:outline-none'>
-                                        <div className='text-neutral-300'>
+                                        <div className='text-neutral-300 '>
                                             <BsPersonPlusFill/>
                                         </div>
                                         <div className='flex-grow text-left'>
@@ -79,7 +79,7 @@ const ListingDetail = () => {
                                 <span>Service charge</span>
                                 <span>$0</span>
                             </div>
-                            <div className='w-full border-b border-neutral-200'></div>
+                            <div className='w-full border-b border-neutral-200 dark:border-neutral-600'></div>
                             <div className="flex justify-between font-semibold">
                                 <span>Total</span>
                                 <span>$199</span>

@@ -7,7 +7,7 @@ import { footerLinks } from '../../data/footerLinks';
 const Footer = () => {
   const social = [{title: "Facebook", link: "/", icon: <AiOutlineFacebook/>}, {title: "Twitter", link: "/", icon: <AiOutlineTwitter/>}, {title: "Youtube", link: "/", icon: <AiOutlineYoutube/>}, {title: "Instagram", link: "/", icon: <AiOutlineInstagram/>}];
   return (
-    <div className='relative py-24 lg:py-28 border-t border-neutral-200'>
+    <div className='relative py-24 lg:py-28 border-t border-neutral-200 dark:border-neutral-700 dark:bg-darkBg'>
       <div className='container md:mx-auto sm:mx-5 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-y-10 gap-x-5 sm:gap-x-8 lg:gap-x-10'>
 
         <div className='lg:flex lg:flex-col grid grid-cols-4 gap-5 col-span-2 md:col-span-4 lg:md:col-span-1 '>
@@ -18,7 +18,7 @@ const Footer = () => {
             <div className='flex items-center space-x-3 lg:space-x-0 lg:flex-col lg:space-y-2.5 lg:items-start'>
               {
                 social?.map((item, i)=>(
-                  <a key={i} href={item.link} className='flex items-center text-2xl text-neutral-700 hover:text-black leading-none space-x-2 group'>
+                  <a key={i} href={item.link} className='flex items-center text-2xl text-neutral-700 dark:text-neutral-300 dark:hover:text-white hover:text-black leading-none space-x-2 group'>
                     {item.icon}
                     <span className='text-sm hidden lg:block'>{item.title}</span>
                   </a>
@@ -31,12 +31,12 @@ const Footer = () => {
         {
           footerLinks?.map((links, i)=>(
             <div className='text-sm' key={i}>
-              <h2 className='font-semibold text-neutral-700'>{links.heading}</h2>
+              <h2 className='font-semibold text-neutral-700 dark:text-neutral-200'>{links.heading}</h2>
               <ul className='mt-5 space-y-4'>
                 {
                   links?.subLinks?.map((link, i)=>(
                     <li key={i} >
-                      <a href={link.link} className='text-neutral-600 hover:text-black '>{link.title}</a>
+                      <a href={link.link} className='text-neutral-600 hover:text-black dark:text-neutral-300 dark:hover:text-white'>{link.title}</a>
                     </li>
                   ))
                 }

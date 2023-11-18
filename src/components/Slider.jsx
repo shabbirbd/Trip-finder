@@ -41,7 +41,7 @@ const Slider = ({cities}) => {
                                         <img src={city.scene} className='hover:opacity-100 lg:md:opacity-90 rounded-xl duration-300 h-full w-full' alt="city" />
                                     </div>
                                     <div className=''>
-                                        <h1 className='text-2xl py-3'>{city.name}</h1>
+                                        <h2 className='text-xl py-3'>{city.name}</h2>
                                         <p className='text-sm text-gray-500'>{city.property} properties</p>
                                     </div>
                                 </div>

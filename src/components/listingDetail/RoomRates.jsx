@@ -27,15 +27,15 @@ const RoomRates = () => {
         <div className='listingDetailCard'>
             <div>
                 <h2 className="text-2xl font-semibold">Room Rates</h2>
-                <span className="block mt-2 text-neutral-500">Prices may increase on weekends or holidays</span>
+                <span className="block mt-2 text-neutral-500 dark:text-neutral-400">Prices may increase on weekends or holidays</span>
             </div>
 
-            <div className="w-14 border-b border-neutral-200"></div>
+            <div className="w-14 border-b border-neutral-200 dark:border-neutral-600"></div>
 
-            <div className='text-sm sm:text-base text-neutral-600 -mb-4 space-y-2'>
+            <div className='text-sm sm:text-base text-neutral-600 dark:text-neutral-200 -mb-4 space-y-2'>
                 {
                     pricing?.map((item, i)=>(
-                        <div className='p-4 flex items-center justify-between space-x-4 bg-neutral-100 rounded-xl border border-neutral-200' key={i}>
+                        <div className='p-4 flex items-center justify-between space-x-4 bg-neutral-100 dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-600' key={i}>
                             <span>{item.title}</span>
                             <span>{item.price}</span>
                         </div>

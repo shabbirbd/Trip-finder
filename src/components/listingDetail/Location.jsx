@@ -7,10 +7,10 @@ const Location = () => {
         <div className='listingDetailCard'>
             <div>
                 <h2 className="text-2xl font-semibold">Location</h2>
-                <span className='block mt-2 text-neutral-500'>San Diego, CA, United States of America (SAN-San Diego Intl.)</span>
+                <span className='block mt-2 text-neutral-500 dark:text-neutral-400'>San Diego, CA, United States of America (SAN-San Diego Intl.)</span>
             </div>
 
-            <div className="w-14 border-b border-neutral-200"></div>
+            <div className="w-14 border-b border-neutral-200 dark:border-neutral-600"></div>
 
             <div className='aspect-h-5 aspect-w-5 sm:aspect-h-3 ring-1 ring-black/10 rounded-xl z-0'>
                 <div className='rounded-xl overflow-hidden z-0'>

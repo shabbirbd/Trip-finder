@@ -12,6 +12,7 @@ export default {
       },
       colors: {
         elemental: "#4338ca",
+        darkBg: "#111827",
         light: "#FAEBED",
         container1: "#F3F4F6",
         container2: "#FEF7ED"

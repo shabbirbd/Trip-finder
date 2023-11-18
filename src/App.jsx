@@ -23,13 +23,15 @@ function App() {
     <>
       <BookingContext.Provider value={[bookingData, setBookingData]}>
         <Navbar />
-        <div className='w-11/12 mx-auto lg:px-[100px] relative dark:bg-black'>
-        <Routes>
-          <Route index path="/" element={<Home/>} />
-          <Route path="/listings" element={<Listings/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/checkout" element={<Checkout/>} />
-        </Routes>
+        <div className='w-screen dark:bg-darkBg'>
+          <div className='container mx-auto lg:px-[100px] relative dark:bg-darkBg dark:text-neutral-200'>
+          <Routes>
+            <Route index path="/" element={<Home/>} />
+            <Route path="/listings" element={<Listings/>} />
+            <Route path="/about" element={<About/>} />
+            <Route path="/checkout" element={<Checkout/>} />
+          </Routes>
+          </div>
         </div>
         <Footer/>
       </BookingContext.Provider>

@@ -43,10 +43,10 @@ const Videos = () => {
             
 
             <div className='flex flex-col lg:flex-row relative sm:py-4 sm:pr-4 md:py-6 md:pr-6 xl:py-14 xl:pr-14 '>
-                <div className='absolute -top-4 -bottom-4 -right-4 w-2/3 xl:w-1/2 rounded-3xl sm:rounded-[50px] md:top-0 md:bottom-0 md:right-0  bg-container1 bg-opacity-40 z-0 '></div>
+                <div className='absolute -top-4 -bottom-4 -right-4 w-2/3 xl:w-1/2 rounded-3xl sm:rounded-[50px] md:top-0 md:bottom-0 md:right-0  bg-container1 dark:bg-neutral-800 bg-opacity-40 z-0 '></div>
 
                 <div className='flex-grow relative pb-2 sm:pb-4 lg:pb-0 lg:pr-5 xl:pr-6'>
-                    <div className='group aspect-w-16 aspect-h-16 sm:aspect-h-9 rounded-3xl sm:rounded-[50px] will-change-transform overflow-hidden border-4 border-white'>
+                    <div className='group aspect-w-16 aspect-h-16 sm:aspect-h-9 rounded-3xl sm:rounded-[50px] will-change-transform overflow-hidden border-8 border-white dark:border-black'>
                         <iframe src={currentLink} allow="accelerometer; clipbord-write; enctypted-media;  gyroscope picture-in-picture" allowFullScreen className={`${play ? "block" : "hidden"}`}></iframe>
                         <div className={`cursor-pointer absolute inset-0 ${play ? "hidden" : "flex"} items-center  justify-center z-20`} onClick={(e)=>{e.preventDefault(),setPlay(true)}}>
                             <div className='bg-white bg-opacity-30 backdrop-filter backdrop-blur rounded-full w-20 h-20 lg:w-52 lg:h-52 p-3 lg:p-12'>

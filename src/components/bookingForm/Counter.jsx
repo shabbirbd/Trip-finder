@@ -21,11 +21,11 @@ const Counter = () => {
 
     return (
         <div className='flex items-center justify-between w-28'>
-            <button className="w-8 h-8 rounded-full flex items-center justify-center border border-neutral-400 dark:border-neutral-500 bg-white  focus:outline-none hover:border-neutral-700  disabled:cursor-default" type="button" onClick={()=>handleChange("decrease")}>
+            <button className="w-8 h-8 rounded-full flex items-center justify-center border border-neutral-400 dark:border-neutral-500 bg-white  focus:outline-none hover:border-neutral-700  disabled:cursor-default dark:text-neutral-500 " type="button" onClick={()=>handleChange("decrease")}>
                 <LuMinus />
             </button>
             <span>{count}</span>
-            <button className="w-8 h-8 rounded-full flex items-center justify-center border border-neutral-400 dark:border-neutral-500 bg-white  focus:outline-none hover:border-neutral-700  disabled:cursor-default" type="button" onClick={()=>handleChange("increase")}>
+            <button className="w-8 h-8 rounded-full flex items-center justify-center border border-neutral-400 dark:text-neutral-500 dark:border-neutral-500 bg-white  focus:outline-none hover:border-neutral-700  disabled:cursor-default" type="button" onClick={()=>handleChange("increase")}>
                 <LuPlus />
             </button>
         </div>

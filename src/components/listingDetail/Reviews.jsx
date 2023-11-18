@@ -9,10 +9,10 @@ const Reviews = () => {
         <div className='listingDetailCard'>
             <h2 className='text-2xl font-semibold'>Reviews {`(23 reviwes)`}</h2>
 
-            <div className="w-14 border-b border-neutral-200"></div>
+            <div className="w-14 border-b border-neutral-200 dark:border-neutral-600"></div>
 
             <div className='space-y-5'>
-                <div className='flex items-center text-yellow-400 space-x-0.5'>
+                <div className='flex items-center text-yellow-400 dark:text-yellow-600 text-2xl space-x-0.5'>
                     <AiFillStar/>
                     <AiFillStar/>
                     <AiFillStar/>
@@ -21,14 +21,14 @@ const Reviews = () => {
                 </div>
 
                 <div className='relative'>
-                    <input type="text" className="block w-full border-neutral-200 focus:border-primary-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 bg-white rounded-3xl  h-16 px-4 py-3 " placeholder="Share your thoughts ..."/>
-                    <button className="flex items-center justify-center rounded-full !leading-none disabled:bg-opacity-70 bg-blue-600 hover:bg-blue-700 text-neutral-50 absolute right-2 top-1/2 transform -translate-y-1/2  w-12 h-12  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600">
+                    <input type="text" className="block w-full border-neutral-200 dark:border-neutral-600 focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 bg-white  dark:bg-neutral-800 rounded-3xl  h-16 px-4 py-3 " placeholder="Share your thoughts ..."/>
+                    <button className="flex items-center justify-center rounded-full !leading-none disabled:bg-opacity-70 bg-elemental hover:bg-blue-700 text-neutral-50 absolute right-2 top-1/2 transform -translate-y-1/2  w-12 h-12  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600">
                         <HiOutlineArrowNarrowRight/>
                     </button>
                 </div>
             </div>
 
-            <div className='divide-y divide-neutral-100'>
+            <div className='divide-y divide-neutral-100 dark:divide-neutral-500'>
                 {
                     reviews1?.map((item, i)=>(
                         <div className="flex space-x-4 py-8" key={i}>
@@ -44,7 +44,7 @@ const Reviews = () => {
                                         <span className="text-sm text-neutral-500  mt-0.5">{item.date}</span>
                                     </div>
 
-                                    <div className='flex text-yellow-500'>
+                                    <div className='flex text-yellow-500 dark:text-yellow-600'>
                                         <AiFillStar/>
                                         <AiFillStar/>
                                         <AiFillStar/>
@@ -54,7 +54,7 @@ const Reviews = () => {
                                     </div>
                                 </div>
 
-                                <span className="block mt-3 text-neutral-600">{item.reviwe}</span>
+                                <span className="block mt-3 text-neutral-600 dark:text-neutral-400">{item.reviwe}</span>
                             </div>
                         </div>
                     ))
@@ -62,7 +62,8 @@ const Reviews = () => {
             </div>
 
             <div className="pt-8">
-                <button className="nc-Button relative h-auto inline-flex items-center justify-center rounded-full transition-colors text-sm sm:text-base px-4 py-3 sm:px-6  ttnc-ButtonSecondary font-medium border bg-white border-neutral-200 text-neutral-700  hover:bg-neutral-100 dark:hover:bg-neutral-800   focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600">View more 20 reviews</button>
+                
+                <button className="relative h-auto inline-flex items-center justify-center rounded-full transition-colors text-sm sm:text-base px-4 py-3 sm:px-6 font-medium border bg-white dark:bg-neutral-800 border-neutral-200 dark:border-neutral-600 text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-600 dark:focus:ring-sky-700 dark:focus:outline-none dark:focus:ring-ofset-2">View more 20 reviwes</button>
             </div>
         </div>
     );

@@ -13,12 +13,12 @@ const FastFacts = () => {
                 <span className="mt-2 md:mt-3 font-normal block text-base sm:text-xl text-neutral-500 "> We're impartial and independent, and every day we create distinctive, world-class programmes and content</span>
             </div>
 
-            <div className='grid md:grid-cols-2 gap-6 lg:grid-cols-3 xl:gap-8'>
+            <div className='grid md:grid-cols-2 gap-6 lg:grid-cols-3 xl:gap-8 mt-8'>
                 {
                     facts?.map((item, i)=>(
-                        <div className="p-6 bg-neutral-100 rounded-2xl" key={i}>
-                            <h3 className="text-2xl font-semibold leading-none text-neutral-900 md:text-3xl ">{item.number}</h3>
-                            <span className="block text-sm text-neutral-500 mt-3 sm:text-base">{item.info}</span>
+                        <div className="p-6 bg-neutral-100 rounded-2xl dark:bg-neutral-600" key={i}>
+                            <h3 className="text-2xl font-semibold leading-none text-neutral-900 dark:text-neutral-200 md:text-3xl ">{item.number}</h3>
+                            <span className="block text-sm text-neutral-500 dark:text-neutral-400 mt-3 sm:text-base">{item.info}</span>
                         </div>
                     ))
                 }

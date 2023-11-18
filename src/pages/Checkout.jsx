@@ -6,17 +6,17 @@ import PaymentInfo from '../components/PaymentInfo';
 
 const Checkout = () => {
     return (
-        <div className=' container mt-11 mb-24 lg:mb-32 flex flex-col-reverse lg:flex-row'>
+        <div className=' container pt-11 pb-24 lg:pb-32 flex flex-col-reverse lg:flex-row'>
             <div className='w-full lg:w-3/5 xl:w-2/3 lg:pr-10'>
-                <div className='w-full flex flex-col sm:rounded-2xl sm:border sm:border-neutral-200 space-y-8 px-0 sm:p-6 xl:p-8'>
+                <div className='w-full flex flex-col sm:rounded-2xl sm:border sm:border-neutral-200 dark:sm:border-neutral-600 space-y-8 px-0 sm:p-6 xl:p-8'>
                     <h2 className="text-3xl lg:text-4xl font-semibold">Confirm and payment</h2>
 
-                    <div className="border-b border-neutral-200 "></div>
+                    <div className="border-b border-neutral-200  dark:border-neutral-600"></div>
 
                     <div>
                         <h3 className="text-2xl font-semibold">Your trip</h3>
 
-                        <div className="mt-6 border border-neutral-200 rounded-3xl flex flex-col sm:flex-row divide-y sm:divide-x sm:divide-y-0 divide-neutral-200overflow-hidden z-10">
+                        <div className="mt-6 border border-neutral-200 dark:border-neutral-600 rounded-3xl flex flex-col sm:flex-row divide-y sm:divide-x sm:divide-y-0 divide-neutral-200overflow-hidden z-10">
                             <button className="text-left flex-1 p-5 flex justify-between space-x-5dark:hover:bg-neutral-800" type="button">
                                 <div className="flex flex-col">
                                     <span className="text-sm text-neutral-400">Date</span>
@@ -41,17 +41,17 @@ const Checkout = () => {
                     <div>
                         <h3 className="text-2xl font-semibold">Pay with</h3>
 
-                        <div className="w-14 mt-6 border-b border-neutral-200"></div>
+                        <div className="w-14 mt-6 border-b border-neutral-200 dark:border-neutral-600"></div>
 
                         <div className='mt-6'>
                             <div className="flex my-5 gap-1">
-                                <button className="px-4 py-1.5 sm:px-6 sm:py-2.5 rounded-full focus:outline-none bg-neutral-800  text-white" id="headlessui-tabs-tab-:r1s:" type="button" >Paypal</button>
-                                <button className="px-4 py-1.5 sm:px-6 sm:py-2.5  rounded-full flex items-center justify-center focus:outline-none  text-neutral-6000  hover:bg-neutral-100" type="button" >
+                                <button className="px-4 py-1.5 sm:px-6 sm:py-2.5 rounded-full focus:outline-none bg-neutral-800 dark:bg-neutral-100 dark:text-neutral-800 text-white" id="headlessui-tabs-tab-:r1s:" type="button" >Paypal</button>
+                                <button className="px-4 py-1.5 sm:px-6 sm:py-2.5  rounded-full flex items-center justify-center focus:outline-none  text-neutral-600  hover:bg-neutral-100" type="button" >
                                     <span className="mr-2.5">Credit card</span>
                                     <img className="w-8" src={visa} alt="visa"/>
                                     <img className="w-8" src={mastercard} alt="mastercard"/>
                                 </button>
-                                <div className="w-14 border-b border-neutral-200 my-5"></div>
+                                <div className="w-14 border-b border-neutral-200 dark:border-neutral-600 my-5"></div>
                             </div>
                         </div>
 
@@ -67,7 +67,7 @@ const Checkout = () => {
 
 
             <div className='hidden lg:block flex-grow relative'>
-                <div className='w-full flex flex-col sm:rounded-2xl border border-neutral-200 space-y-6 sm:space-y-8 sm:p-6 xl:p-8 sticky top-28'>
+                <div className='w-full flex flex-col sm:rounded-2xl border border-neutral-200 dark:border-neutral-600 space-y-6 sm:space-y-8 sm:p-6 xl:p-8 sticky top-28'>
                     <div className='flex flex-col sm:flex-row sm:items-center'>
                         <div className='flex-shrink-0 w-full sm:w-40 '>
                             <div className=" aspect-w-4 aspect-h-3 sm:aspect-h-4 rounded-2xl overflow-hidden">
@@ -77,17 +77,17 @@ const Checkout = () => {
 
                         <div className="py-5 sm:px-5 space-y-3">
                             <div>
-                                <span className="text-sm text-neutral-500line-clamp-1">Hotel room in Tokyo, Jappan</span>
+                                <span className="text-sm text-neutral-500 dark:text-neutral-400 line-clamp-1">Hotel room in Tokyo, Jappan</span>
                                 <span className="text-base font-medium mt-1 block">The Lounge & Bar</span>
                             </div>
-                            <span className="block  text-sm text-neutral-500">2 beds · 2 baths</span>
-                            <div className="w-10 border-b border-neutral-200 "></div>
+                            <span className="block  text-sm text-neutral-500 dark:text-neutral-400">2 beds · 2 baths</span>
+                            <div className="w-10 border-b border-neutral-200 dark:border-neutral-600"></div>
                             <div className="nc-StartRating flex items-center space-x-1 text-sm  " >
                                 <div className="pb-[2px]">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className="w-[18px] h-[18px] text-orange-500"><path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd"></path></svg>
                                 </div>
                                 <span className="font-medium ">4.5</span>
-                                <span className="text-neutral-500 ">(112)</span>
+                                <span className="text-neutral-500 dark:text-neutral-400">(112)</span>
                             </div>
                         </div>
                     </div>
@@ -103,7 +103,7 @@ const Checkout = () => {
                             <span>Service charge</span>
                             <span>$0</span>
                         </div>
-                        <div className="border-b border-neutral-200"></div>
+                        <div className="border-b border-neutral-200 dark:border-neutral-600"></div>
                         <div className="flex justify-between font-semibold">
                             <span>Total</span>
                             <span>$57</span>

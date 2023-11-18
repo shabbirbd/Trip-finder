@@ -24,7 +24,7 @@ const HostInfo = () => {
         <div className='listingDetailCard'>
             <h2 className='text-2xl font-semibold'>Host Information</h2>
 
-            <div className="w-14 border-b border-neutral-200"></div>
+            <div className="w-14 border-b border-neutral-200 dark:border-neutral-600"></div>
 
             <div className='flex items-center space-x-4'>
                 <div className='relative flex-shrink-0 inline-flex items-center justify-center font-semibold shadow-inner rounded-full h-10 w-10 ring-1 ring-white '>
@@ -36,7 +36,7 @@ const HostInfo = () => {
 
                 <div>
                     <h2 className='text-xl font-medium'>Kavin Francis</h2>
-                    <div className='mt-1.5 text-sm text-neutral-500 flex items-center '>
+                    <div className='mt-1.5 text-sm text-neutral-500 dark:text-neutral-400 flex items-center '>
                         <div className='flex items-center text-sm space-x-1'>
                             <AiFillStar className='text-yellow-400 pb-[2px] h-[18px] w-[18px]'/>
                             <span className='font-medium'>4.5</span>
@@ -48,9 +48,9 @@ const HostInfo = () => {
                 </div>
             </div>
 
-            <span className='block text-neutral-600'>Providing lake views, The Symphony 9 Tam Coc in Ninh Binh provides accommodation, an outdoor swimming pool, a bar, a shared lounge, a garden and barbecue facilities...</span>
+            <span className='block text-neutral-600 dark:text-neutral-200'>Providing lake views, The Symphony 9 Tam Coc in Ninh Binh provides accommodation, an outdoor swimming pool, a bar, a shared lounge, a garden and barbecue facilities...</span>
 
-            <div className='block text-neutral-500 space-y-2.5'>
+            <div className='block text-neutral-500 dark:text-neutral-400 space-y-2.5'>
                 {
                     hostInfo?.map((item, i)=>(
                         <div className="flex items-center space-x-3 text-2xl" key={i}>
@@ -61,10 +61,10 @@ const HostInfo = () => {
                 }
             </div>
 
-            <div className="w-14 border-b border-neutral-200"></div>
+            <div className="w-14 border-b border-neutral-200 dark:border-neutral-600"></div>
 
             <div>
-                <a className="relative h-auto inline-flex items-center justify-center rounded-full transition-colors text-sm sm:text-base font-medium px-4 py-3 sm:px-6  border bg-white border-neutral-200 text-neutral-700  hover:bg-neutral-100   focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-6000" href="/">See host profile</a>
+                <a className="relative h-auto inline-flex items-center justify-center rounded-full transition-colors text-sm sm:text-base px-4 py-3 sm:px-6 font-medium border bg-white dark:bg-neutral-800 border-neutral-200 dark:border-neutral-600 text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-600 dark:focus:ring-sky-700 dark:focus:outline-none dark:focus:ring-ofset-2" href='#'>See host profile</a>
             </div>
         </div>
     );

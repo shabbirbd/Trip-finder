@@ -3,7 +3,6 @@ import { CiCalendarDate } from 'react-icons/ci';
 import { IoLocationOutline } from 'react-icons/io5';
 import { MdOutlinePersonAddAlt } from 'react-icons/md';
 import { BookingContext } from '../../App';
-import Calander from './Calander';
 import Counter from './Counter';
 
 const Booking = () => {
@@ -12,15 +11,15 @@ const Booking = () => {
     
 
     return (
-        <div className='max-w-6xl w-full mx-auto py-5'>
-            <form className='w-full relative flex flex-col md:flex-row md:rounded-full rounded-md shadow-xl bg-white border border-neutral-200' >
+        <div className='max-w-6xl w-full mx-auto py-5 '>
+            <form className='w-full relative flex flex-col md:flex-row md:rounded-full rounded-md shadow-xl bg-white border border-neutral-200 dark:bg-neutral-800 dark:shadow-2xl' >
                 <div className='relative flex flex-[1.5]'>
                     <div className='flex z-10 flex-1 relaive flex-shrink-0 items-center space-x-3 cursor-pointer text-left p-5'>
                         <div className="text-neutral-300 text-2xl">
                             <IoLocationOutline />
                         </div>
                         <div className='flex-grow'>
-                            <input type="text" className='block w-full bg-transparent border-none focus:ring-0 p-0 focus:outline-none focus:placeholder-neutral-300 xl:text-lg font-semibold placeholder-neutral-800 truncate' placeholder='Location' />
+                            <input type="text" className='block w-full bg-transparent border-none focus:ring-0 p-0 focus:outline-none focus:placeholder-neutral-300 dark:placeholder-neutral-400 xl:text-lg font-semibold placeholder-neutral-800 truncate' placeholder='Location' />
                             <span className="block mt-0.5 text-sm text-neutral-400 font-light ">
                                 <span className="line-clamp-1">Where are you going?</span>
                             </span>
@@ -43,10 +42,10 @@ const Booking = () => {
 
 
                     {/* headless ui */}
-                    <div className='absolute top-full w-full h-5'></div>
+                    {/* <div className='absolute top-full w-full h-5'></div>
                     <div className='border-2 border-green-400 group-hover:block hidden absolute left-1/2 z-10 mt-3 top-full w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-3xl translate-y-0'>
                         <Calander/>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="self-center border-r border-slate-200 h-8"></div>
@@ -72,12 +71,12 @@ const Booking = () => {
 
                     <div className='absolute w-full h-5 top-full right-0'></div>
                     {/* headless ui */} 
-                    <div className={`absolute group-hover:block hidden right-0 z-10 w-full sm:min-w-[340px] lg:w-sm bg-white top-full mt-3 py-5 sm:py-6 px-4 sm:px-8 rounded-3xl opacity-100 shadow-xl space-y-3`} >
+                    <div className={`absolute group-hover:block hidden right-0 z-10 w-full sm:min-w-[340px] lg:w-sm bg-white top-full mt-3 py-5 sm:py-6 px-4 sm:px-8 rounded-3xl opacity-100 shadow-xl space-y-3 dark:bg-neutral-800`} >
                         {
                             guestsCriteria?.map((item, i)=>(
                                 <div className='flex items-center justify-between space-x-5 w-full ' key={i} >
                                     <div className='flex flex-col '>
-                                        <span className="font-medium text-neutral-800">{item.title}</span>
+                                        <span className="font-medium text-neutral-800 dark:text-neutral-400">{item.title}</span>
                                         <span className="text-xs text-neutral-500 font-normal">{item.age}</span>
                                     </div>
                                     <Counter/>
