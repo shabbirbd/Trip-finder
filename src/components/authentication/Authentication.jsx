@@ -1,8 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import fblogo from '../../assets/fblogo.png';
 import googlelogo from '../../assets/googlelogo.png';
 
 const Authentication = ({auth}) => {
+    const navigate = useNavigate();
 
 
     return (
@@ -47,11 +49,11 @@ const Authentication = ({auth}) => {
             {
                 auth === "login" ? 
                     <span className="block text-center text-neutral-700 dark:text-neutral-300">New user?  
-                        <a href="/signup"> Create an account</a>
+                        <span onClick={()=>navigate("/signup")} className='cursor-pointer'> Create an account</span>
                     </span> 
                     : 
-                    <span className="block text-center text-neutral-700 dark:text-neutral-300">Already have an account?  
-                        <a href="/login"> Sign in</a>
+                    <span className="block text-center text-neutral-700 dark:text-neutral-300 ">Already have an account?  
+                        <span onClick={()=>navigate("/login")} className='cursor-pointer'> Sign in</span>
                     </span>
             }
             
