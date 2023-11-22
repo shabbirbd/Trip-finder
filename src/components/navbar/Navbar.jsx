@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaBars, FaMoon, FaMountainSun, FaX } from "react-icons/fa6";
 import { MdOutlineWbSunny } from 'react-icons/md';
+import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import DarkBtn from '../buttons/DarkBtn';
 import Navlinks from './Navlinks';
@@ -10,6 +11,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false)
     const [dark, setDark] = useState(false);
     const element = document.documentElement;
+    const navigate = useNavigate();
 
     useEffect(()=>{
         if(dark === true){
@@ -18,9 +20,9 @@ const Navbar = () => {
             element.classList.remove("dark")
         }
     }, [dark])
-
-    const handleAuth = ()=>{
-        
+    
+    const handleNavigate = ()=>{
+        navigate("/login")
     }
 
     return (
@@ -32,7 +34,7 @@ const Navbar = () => {
             {/* mobile menu */}
             <ul className={`md:hidden fixed z-50 top-0 bg-white w-2/3 h-full shadow-2xl flex flex-col gap-10 text-medium p-7 pt-20 duration-500 ${open ? "right-0" : "right-[-100%]"}`}>
                 <Navlinks/>
-                <DarkBtn onClick={handleAuth}>Sign Up</DarkBtn>
+                <DarkBtn navigate={handleNavigate}>Sign Up</DarkBtn>
             </ul>
 
             <div className='md:flex items-center gap-3 hidden'>
@@ -42,7 +44,7 @@ const Navbar = () => {
 
                     }
                 </div>
-                <DarkBtn onClick={handleAuth}>Sign Up</DarkBtn>
+                <DarkBtn navigate={handleNavigate}>Sign Up</DarkBtn>
             </div>
 
             <div className='text-2xl md:hidden z-50 pt-2 flex items-center gap-3'>

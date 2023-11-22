@@ -27,10 +27,10 @@ const Authentication = ({auth}) => {
             </div>
 
 
-            <form className="grid grid-cols-1 gap-6 max-w-md mx-auto" action="#" method="post">
+            <form className="grid grid-cols-1 gap-6 max-w-md mx-auto my-10" action="#" method="post">
                 <label className="block">
                     <span className="text-neutral-800 dark:text-neutral-200">Email address</span>
-                    <input type="email" className="block w-full border border-neutral-200 focus:border-primary-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50 bg-white dark:border-neutral-700 dark:focus:ring-sky-600 dark:focus:ring-opacity-25 dark:bg-neutral-900 rounded-2xl text-sm font-normal h-11 px-4 py-3 mt-1" placeholder="example@example.com"/>
+                    <input type="email" autoComplete='email' className="block w-full border border-neutral-200 focus:border-primary-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50 bg-white dark:border-neutral-700 dark:focus:ring-sky-600 dark:focus:ring-opacity-25 dark:bg-neutral-900 rounded-2xl text-sm font-normal h-11 px-4 py-3 mt-1" placeholder="example@example.com"/>
                 </label>
                 
                 <label className="block">
@@ -39,10 +39,22 @@ const Authentication = ({auth}) => {
                             auth === "login" &&  <a className="text-sm" href="#">Forgot password?</a> 
                         }
                     </span>
-                    <input type="password" className="block w-full border border-neutral-200 focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50 bg-white dark:border-neutral-700 dark:focus:ring-sky-600 dark:focus:ring-opacity-25 dark:bg-neutral-900 rounded-2xl text-sm font-normal h-11 px-4 py-3 mt-1"/>
+                    <input type="password" autoComplete='current-password' className="block w-full border border-neutral-200 focus:border-sky-300 focus:ring focus:ring-sky-200 focus:ring-opacity-50 bg-white dark:border-neutral-700 dark:focus:ring-sky-600 dark:focus:ring-opacity-25 dark:bg-neutral-900 rounded-2xl text-sm font-normal h-11 px-4 py-3 mt-1"/>
                 </label>
                 <button className="relative h-auto inline-flex items-center justify-center rounded-full transition-colors text-sm sm:text-base font-medium px-4 py-3 sm:px-6  disabled:bg-opacity-70 bg-elemental hover:shadow-xl text-neutral-50  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-600 dark:focus:ring-offset-0" type='button'>Continue</button>
             </form>
+
+            {
+                auth === "login" ? 
+                    <span className="block text-center text-neutral-700 dark:text-neutral-300">New user?  
+                        <a href="/signup"> Create an account</a>
+                    </span> 
+                    : 
+                    <span className="block text-center text-neutral-700 dark:text-neutral-300">Already have an account?  
+                        <a href="/login"> Sign in</a>
+                    </span>
+            }
+            
 
         </div>
     );
