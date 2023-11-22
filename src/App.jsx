@@ -1,6 +1,7 @@
 
 import { createContext, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Authentication from './components/authentication/Authentication';
 import Footer from './components/footer/footer';
 import Navbar from './components/navbar/Navbar';
 import About from './pages/About';
@@ -30,6 +31,8 @@ function App() {
             <Route path="/listings" element={<Listings/>} />
             <Route path="/about" element={<About/>} />
             <Route path="/checkout" element={<Checkout/>} />
+            <Route path="/login" element={<Authentication auth={"login"}/>} />
+            <Route path="/signup" element={<Authentication auth={"signup"}/>} />
           </Routes>
           </div>
         </div>

@@ -12,7 +12,7 @@ const Booking = () => {
 
     return (
         <div className='max-w-6xl w-full mx-auto py-5 '>
-            <form className='w-full relative flex flex-col md:flex-row md:rounded-full rounded-md shadow-xl bg-white border border-neutral-200 dark:bg-neutral-800 dark:shadow-2xl' >
+            <form className='w-full relative flex flex-col md:flex-row md:rounded-full rounded-md shadow-xl bg-white border border-neutral-200 dark:border-slate-600 dark:bg-slate-800 dark:shadow-2xl' >
                 <div className='relative flex flex-[1.5]'>
                     <div className='flex z-10 flex-1 relaive flex-shrink-0 items-center space-x-3 cursor-pointer text-left p-5'>
                         <div className="text-neutral-300 text-2xl">
@@ -27,7 +27,7 @@ const Booking = () => {
                     </div>
                 </div>
 
-                <div className="self-center border-r border-slate-200 h-8"></div>
+                <div className="self-center border-r border-slate-200 dark:border-slate-600 h-8"></div>
 
                 <div className='z-10 relative flex flex-1 p-5 group'>
                     <button className='flex-1 relative z-10 flex items-center space-x-3 focus:outline-none' type='button'>
@@ -48,7 +48,7 @@ const Booking = () => {
                     </div> */}
                 </div>
 
-                <div className="self-center border-r border-slate-200 h-8"></div>
+                <div className="self-center border-r border-slate-200 dark:border-slate-600 h-8"></div>
                 
 
                 <div className='flex relative flex-1 p-5 group' >
