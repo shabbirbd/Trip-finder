@@ -33,16 +33,16 @@ const Booking = () => {
                 <div className="self-center border-r border-slate-200 dark:border-slate-600 h-8"></div>
 
                 <div className='z-10 relative flex flex-1 p-5 group'>
-                    <button className='flex-1 relative z-10 flex items-center space-x-3 focus:outline-none' type='button'>
+                    <div className='flex-1 relative z-10 flex items-center space-x-3 focus:outline-none' type='button'>
                         <div className='text-neutral-300 text-2xl'>
                             <CiCalendarDate />
                         </div>
-                        <div className='flex-grow text-left'>
-                            <DatePicker showTwoMonth={true} rangeDate={setRangeDate} placeholder="Checkin - Checkout" >
+                        <div className='flex-grow text-left z-50'>
+                            <DatePicker showTwoMonth={true} rangeDate={setRangeDate} placeholder="Check In - Check Out" className='border-none' >
                                 <DatePicker.Range/>
                             </DatePicker>
                         </div>
-                    </button>
+                    </div>
 
 
                     {/* headless ui */}
@@ -56,8 +56,8 @@ const Booking = () => {
                 
 
                 <div className='flex relative flex-1 p-5 group' >
-                    <div className='flex-1 z-10 flex items-center focus:outline-none' >
-                        <button className='relative z-10 flex-1 flex items-center text-left space-x-3 focus:outline-none'  type='button'> 
+                    <div className='flex-1 flex items-center focus:outline-none' >
+                        <button className='relative flex-1 flex items-center text-left space-x-3 focus:outline-none'  type='button'> 
                             <div className='text-neutral-300 text-2xl'>
                                 <MdOutlinePersonAddAlt />
                             </div>
