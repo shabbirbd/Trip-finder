@@ -1,4 +1,5 @@
-import React, { useContext } from 'react';
+import { DatePicker } from 'keep-react';
+import React, { useContext, useState } from 'react';
 import { CiCalendarDate } from 'react-icons/ci';
 import { IoLocationOutline } from 'react-icons/io5';
 import { MdOutlinePersonAddAlt } from 'react-icons/md';
@@ -8,6 +9,8 @@ import Counter from './Counter';
 const Booking = () => {
     const guestsCriteria = [{title: "Adults", age: "Ages 13 or above"},{title: "Children", age: "Ages 2-12"}, {title: "Infants", age: "Ages 0-2"}];
     const [bookingData, setBookingData] = useContext(BookingContext);
+    const [rangeDate, setRangeDate] = useState(null);
+
     
 
     return (
@@ -35,8 +38,9 @@ const Booking = () => {
                             <CiCalendarDate />
                         </div>
                         <div className='flex-grow text-left'>
-                            <span className="block xl:text-lg font-semibold">12 Feb - 27 Feb</span>
-                            <span className="block mt-1 text-sm text-neutral-400 leading-none font-light">Check in - Check out</span>
+                            <DatePicker showTwoMonth={true} rangeDate={setRangeDate} placeholder="Checkin - Checkout">
+                                <DatePicker.Range />
+                            </DatePicker>
                         </div>
                     </button>
 

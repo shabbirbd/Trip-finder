@@ -1,10 +1,15 @@
-import { useState } from 'react';
+import { DatePicker } from "keep-react";
+import { useState } from "react";
+
 
 const Calander = () => {
-    const [startDate, setStartDate] = useState(new Date());
+    const [rangeDate, setRangeDate] = useState(null);
+   
     return (
             <>
-                Date Picker
+                <DatePicker showTwoMonth={true} rangeDate={setRangeDate} placeholder="Start - Finish">
+                    <DatePicker.Range />
+                </DatePicker>
             </>
     );
 };
