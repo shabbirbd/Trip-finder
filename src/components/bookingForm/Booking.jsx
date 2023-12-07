@@ -38,8 +38,8 @@ const Booking = () => {
                             <CiCalendarDate />
                         </div>
                         <div className='flex-grow text-left'>
-                            <DatePicker showTwoMonth={true} rangeDate={setRangeDate} placeholder="Checkin - Checkout">
-                                <DatePicker.Range />
+                            <DatePicker showTwoMonth={true} rangeDate={setRangeDate} placeholder="Checkin - Checkout" >
+                                <DatePicker.Range/>
                             </DatePicker>
                         </div>
                     </button>
