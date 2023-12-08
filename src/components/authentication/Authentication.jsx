@@ -9,7 +9,7 @@ const Authentication = ({auth}) => {
 
     return (
         <div className='w-11/12 mx-auto pb-24 lg:pb-32'>
-            <h2 className='my-20 capitalize flex items-center justify-center text-3xl md:text-5xl font-semibold leading-[115%] text-neutral-900 dark:text-neutral-100 '>{auth}</h2>
+            <h2 className='py-20 capitalize flex items-center justify-center text-3xl md:text-5xl font-semibold leading-[115%] text-neutral-900 dark:text-neutral-100 '>{auth}</h2>
 
             <div className='max-w-md mx-auto space-y-6'>
                 <div className="grid gap-3">
