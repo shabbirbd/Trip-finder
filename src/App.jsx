@@ -2,7 +2,7 @@
 import { createContext, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Authentication from './components/authentication/Authentication';
-import Footer from './components/footer/footer';
+import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
 import About from './pages/About';
 import Checkout from './pages/Checkout';
